@@ -20,7 +20,7 @@
 
 ### Наши библиотеки и модули:
 #### Для обработки статьи:
-* PDFMiner
+* PDFMiner, PDFMiner.six
 * tabula
 * PyMuPDF
 * BeautifulSoup (?)
