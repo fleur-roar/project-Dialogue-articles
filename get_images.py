@@ -1,10 +1,10 @@
 import fitz
 
 doc = fitz.open(filepath)
+counter = 0
 for page in doc:
     images = page.get_images()
     if images:
-        counter = 0
         for im in images:
             counter += 1
             pix = fitz.Pixmap(doc, im[0])
