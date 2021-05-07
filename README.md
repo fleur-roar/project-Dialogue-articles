@@ -22,7 +22,7 @@
 #### Для обработки статьи:
 * PDFMiner
 * tabula
-* (для метаданных и картинок предположительно PyMuPDF)
+* PyMuPDF
 * BeautifulSoup (?)
 #### Для дизайна:
 * pyfiglet  (?)
