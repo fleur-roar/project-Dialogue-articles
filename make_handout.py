@@ -11,7 +11,7 @@ def get_tables(path):
     for elem in tabb:
         ccounter += 1
         with open (name + str(ccounter) + '.xlsx', 'w', encoding = 'utf-8'):
-            elem.to_excel('table' + str(ccounter) + '.xlsx')
+            elem.to_excel(name + str(ccounter) + '.xlsx')
             
 def get_images(path):
     doc = fitz.open(path)
@@ -28,7 +28,7 @@ def get_images(path):
 
 
 def get_html(path, name):
-    pathToScript = r'C:\Users\Anna\Python39\Scripts\pdf2txt.py'
+    pathToScript = r'C:\Users\Anna\Python39\Scripts\pdf2txt.py' 
     pathPDFinput = os.path.join(path)
     pathHTMLoutput = os.path.join(name)
     os.system(r'C:\Users\Anna\Python39\python.exe {} -o {} -S {} -t html'.format(pathToScript, pathHTMLoutput, pathPDFinput))
